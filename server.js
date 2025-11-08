@@ -64,7 +64,7 @@ app.post("/processar-pagamento", async (req, res) => {
   try {
     const token = await generateAccessToken();
 
-    const amount = "10";
+    const amount = "297";
     const reference = "PagamentoTeste";
 
     // ✅ ESCOLHER WALLET E ENDPOINT CORRETO
@@ -214,3 +214,4 @@ app.listen(PORT, () => {
   console.log("⚠️ Lembra de registrar o redirect URI igual a este URL no painel!");
 
 });
+
