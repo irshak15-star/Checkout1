@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setLoading(true);
         resultElement.style.display = 'none';
 
-        fetch('http://https://checkout1.onrender.com//processar-pagamento', {
+        fetch('/processar-pagamento', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -98,3 +98,4 @@ document.addEventListener('DOMContentLoaded', function() {
     phoneInput.focus();
 
 });
+
